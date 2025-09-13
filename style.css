@@ -5,11 +5,20 @@
     padding: 0;
 }
 .header{
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.539);
+    z-index: 10;
+}
+.inner-nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 80%;
-    margin: 2rem auto;
+    margin: 0 auto;
 }
 .icon p{
     cursor: pointer;
@@ -107,4 +116,19 @@ a:first-child{
 .product-inner-text-2 {
     margin-top: -0.7rem;
     font-size: 1rem;
+}
+button:hover{
+    box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+.inner-img{
+    filter: blur(0.1rem);
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+.inner-img:hover{
+    filter: blur(0);
+    transform: translateY(-5px) translateX(-5px);
+    
+    
 }
